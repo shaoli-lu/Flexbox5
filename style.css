@@ -53,6 +53,7 @@ html {
   .flex-form {
     z-index: 10;
     position: relative;
+    width: 100%;
   }
   
   .flex-form > * {
@@ -74,8 +75,7 @@ html {
   /*Flexbox Starts Here*/
   .cover {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      flex-wrap: wrap;
      
   }
 
@@ -83,7 +83,9 @@ html {
       display: flex;
       border: 20px solid rgba(0, 0, 0, 0.3);
       border-radius: 5px;
-      flex-wrap: wrap;
+      
+      justify-content: center;
+      align-items: center;
   }
 
   input[type="search"] {
@@ -91,5 +93,5 @@ html {
   }
 
   input[type="date"] {
-      flex-basis: 270px;
+      flex-basis: 220px;
   }
